@@ -3,12 +3,16 @@ import {View, Text, Button, TouchableOpacity, StyleSheet, Image} from 'react-nat
 import FormInput from '../components/FormInput';
 import FormButton from '../components/FormButton';
 import SocialButton from '../components/SocialButton';
+import { AuthContext } from '../navigation/AuthProvider';
 
 
 const SignupScreen = ({navigation}) => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [confirmPassword, setConfirmPassword] = useState();
+
+    const {register} = useContext(AuthContext);
+
         return (
             <View style={styles.container}>
                 <Text style={styles.text}>Create an Account</Text>
@@ -31,14 +35,14 @@ const SignupScreen = ({navigation}) => {
 
                 <FormInput
                     labelValue={confirmPassword}
-                    onChangeText= {(userPassword) => setPassword(userPassword)}
+                    onChangeText= {(userPassword) => setConfirmPassword(userPassword)}
                     placeholderText='Confirm Password'
                     iconType="lock"
                     secureTextEntry={true}
                 />
 
                 <FormButton buttonTitle='Sign Up'
-                onPress={() => alert('Sign Up clicked!')}
+                onPress={() => register(email, password)}
                 />
                 
                 <View style={styles.textPrivate}>

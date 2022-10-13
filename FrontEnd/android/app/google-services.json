@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "475562780752",
+    "project_id": "eyecu-f4c82",
+    "storage_bucket": "eyecu-f4c82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475562780752:android:a169c5a2ed78c67373c955",
+        "android_client_info": {
+          "package_name": "com.frontend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475562780752-mtash6of1c6qo649sqrdf2i537s2a0r5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMfs-1zsatEGeWFEYaye7aZtbI1dfXFf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475562780752-mtash6of1c6qo649sqrdf2i537s2a0r5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
