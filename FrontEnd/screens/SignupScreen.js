@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import {View, Text, Button, TouchableOpacity, StyleSheet, Image} from 'react-native';
 import FormInput from '../components/FormInput';
 import FormButton from '../components/FormButton';
@@ -54,21 +54,25 @@ const SignupScreen = ({navigation}) => {
                     <Text style={[styles.color_textPrivate, {color: '#e88832'}]}>Privacy Policy</Text>
                 </View>
 
-                <SocialButton
-                    buttonTitle='Sign Up with Facebook'
-                    btnType="facebook"
-                    color="#4867aa"
-                    backgroundColor="#e6eaf4"
-                    onPress={() => {}}
-                />
+                {Platform.OS === 'android' ? (
+                    <View>
+                        <SocialButton
+                            buttonTitle='Sign Up with Facebook'
+                            btnType="facebook"
+                            color="#4867aa"
+                            backgroundColor="#e6eaf4"
+                            onPress={() => {}}
+                        />
 
-                <SocialButton
-                    buttonTitle='Sign Up with Google'
-                    btnType="google"
-                    color="#de4d41"
-                    backgroundColor="#f5e7ea"
-                    onPress={() => {}}
-                />
+                        <SocialButton
+                            buttonTitle='Sign Up with Google'
+                            btnType="google"
+                            color="#de4d41"
+                            backgroundColor="#f5e7ea"
+                            onPress={() => {}}
+                        />
+                    </View>
+                ) : null }
 
                 <TouchableOpacity style={styles.navButton} onPress={() => navigation.navigate('Login')}>
                     <Text style={styles.navButtonText}>Have an Account? Sign In</Text>

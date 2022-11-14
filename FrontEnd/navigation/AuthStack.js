@@ -1,20 +1,53 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { enableScreens } from 'react-native-screens';
 
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+
+
 
 import OnboardingScreen from '../screens/OnboardingScreen';
 import LoginScreen from '../screens/LoginScreen';
 import SignupScreen from '../screens/SignupScreen';
 
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+import { GoogleSignin } from '@react-native-community/google-signin';
+
 const Stack = createStackNavigator();
 
 const AuthStack = () => {
-return (
-    <Stack.Navigator>
+    const [isFirstLaunch, setIsFirstLaunch] = useState(null);
+    let routeName;
+    
+
+    useEffect(() => {
+    
+    AsyncStorage.getItem('alreadyLaunched').then((value) => {
+        if (value == null) {
+            AsyncStorage.setItem('alreadyLaunched', 'true');
+            setIsFirstLaunch(true);
+        } else {
+            setIsFirstLaunch(false);
+        }
+    });
+
+    GoogleSignin.configure({
+        webClientId: '475562780752-mtash6of1c6qo649sqrdf2i537s2a0r5.apps.googleusercontent.com',
+    });
+}, []);
+
+if (isFirstLaunch === null) {
+    return null;
+} else if (isFirstLaunch == true) {
+    routeName = 'Onboarding';
+} else {
+    routeName = 'Login'
+}
+
+
+    return (
+    <Stack.Navigator initialRouteName={routeName}>
         <Stack.Screen
             name='Onboarding'
             component={OnboardingScreen}
