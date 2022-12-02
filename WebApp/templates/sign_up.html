@@ -100,13 +100,22 @@
     
         <main class="form-signin w-100 m-auto">
           <form>
+             <!-- Need to fix logo ...-->
             <img class="mb-4" src="/WebApp/EyeCU-logo.png" alt="no" width="72" height="57">
-            <h1 class="h3 mb-3 fw-normal">Sign in or Sign up</h1>
+            <h1 class="h3 mb-3 fw-normal">Sign up</h1>
         
             <div class="form-floating">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <input type="email" class="form-control" id="floatingInput" name='email' placeholder="name@example.com">
               <label for="floatingInput">Email address</label>
             </div>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" name='firstName' placeholder="First Name">
+                <label for="floatingInput">Firt Name</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" name='lastName' placeholder="Last Name">
+                <label for="floatingInput">Last Name</label>
+              </div>
             <div class="form-floating">
               <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
               <label for="floatingPassword">Password</label>
@@ -118,12 +127,10 @@
               </label>
             </div>
             <button class=" btn btn-lg btn-primary" type="submit">Sign in</button>
-            <br>
+            <span class="placeholder col-6"></span>
             <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-            <div class=" btn-group">
-                <button class='w-100 btn-primary btn-lg'>Login</button>
-                <button class='w-100 btn-primary btn-lg'>Sign Up</button>
-              </div>
+            
+            
           </form>
         </main>
         

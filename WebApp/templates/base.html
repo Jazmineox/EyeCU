@@ -29,19 +29,35 @@
             <button class="navbar-toggler" type='button' data-toggle='collapse' data-target='#navbar'>
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class='collapse navbar-collapse' id='navbar'>
-                <div class='navbar-nav'>
-                    <a class='nav-item nav-link' id='login' href='/login'>Login</a>
-                    <a class='nav-item nav-link' id='signUp' href='/sign-up'>Sign Up</a>
-                    <a class='nav-item nav-link' id='logout' href='/logout'>Logout</a>
-                    <a class='nav-item nav-link' id='home' href='/'>Home</a>
-                </div>
-            </div>
+            <ul class="navbar-nav mr-auto">
+                <li class='nav-item active'>
+                    <a class="navbar-brand" href="#">
+                        <!-- Need to fix logo ...-->
+                        <img classs="img-responsive" width="130px" height="" src="/WebApp/EyeCU-logo.png" id="home" href="/">
+                    </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" id="home" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Upload a photo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Book an Appointment</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" id="login" href="/login">Login/Signup</a>
+                </li>
+            </ul>
+
         </nav>
         <div class='container'>
             {% block content %}{% endblock  %}
         </div>
 
+       
         <script
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
