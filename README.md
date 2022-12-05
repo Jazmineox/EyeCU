@@ -36,11 +36,12 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About EyeCU
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Disease is everywhere. However, due to our continuously advancing society in technology, we are becoming better at categorizing and identifying the early stages of diseases. 
+Our web application EyeCU, will be able to determine what eye disease a user may have based off of a picture that will be taken and uploaded by the user, which will be processed by in our application.
+
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
@@ -59,14 +60,13 @@ Use the `BLANK_README.md` to get started.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
+* [![Flask][flask.palletsprojects.com/]][Flask-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
+* [![TensorFlow][www.tensorflow.org/]][TensorFlow-url]
+* [![Gradio][https://gradio.app/]][Gradio-url]
+* [![Keras][https://keras.io/]][Keras-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
