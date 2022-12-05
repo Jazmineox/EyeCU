@@ -64,9 +64,9 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 * Flask [flask.com](flask.palletsprojects.com/)
-* [![TensorFlow][www.tensorflow.org/]][TensorFlow-url]
-* [![Gradio][https://gradio.app/]][Gradio-url]
-* [![Keras][https://keras.io/]][Keras-url]
+* TensorFlow [www.tensorflow.org/](www.tensorflow.org/)
+* Keras [Keras.io](https://keras.io/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
