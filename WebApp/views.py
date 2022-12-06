@@ -5,6 +5,6 @@ views = Blueprint('views', __name__)
 #decorator
 @views.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index.htm')
 
 

@@ -23,3 +23,6 @@ def sign_up():
 def upload():    
     return render_template('upload.html')
 
+@auth.route('/appointment')
+def appointment():    
+    return render_template('appointment.htm')
