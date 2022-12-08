@@ -6,47 +6,94 @@
 {% block content %}
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-
-    <title>Home pages</title>
-
-    
-
-    <!-- Bootstrap core CSS -->
-
-    <!-- Custom styles for this template -->
-
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+  .fa-anchor,.fa-coffee {font-size:200px}
+  </style>
   </head>
+  <body>
+  
 
-  <body class="text-center">
-
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      
-
-      <main role="main" class="inner cover">
-        <h1></h1>
-        <h1 class="cover-heading">EyeCU</h1>
-        <br><br>
-        <p class="lead">A.I. Medical service available at the tip of your fingers!</p>
-        <p class="lead">
-          <br><br>
-          <a href="#" class="btn btn-lg btn-secondary" href="/about">About EyeCU</a>
-        </p>
-      </main>
-
+  
+  <!-- Header -->
+  <br>
+  <header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Welcome to EyeCU!</h1>
+    <p class="w3-xlarge">An A.I. medical service at your fingertips</p>
+    <a class="btn btn-lg w3-black btn-secondary" href="/about">About EyeCU</a>
+  </header>
+  
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>What is EyeCU</h1>
+        <h5 class="w3-padding-32">EyeCU is a web application thT will be able to determine what eye disease a user may have based off 
+          of a picture that will be taken and uploaded by the use and  will be processed through A.I. analysis.</h5>
+  
+        <p class="w3-text-grey">Get started today by uploading your picture to our A.I. Model.</p>
+          <a class="btn btn-lg w3-black btn-secondary" href="/upload">Upload a picture today!</a>
+      </div>
+  
+      <div class="w3-third w3-center">
+        <i class="fa fa-anchor w3-padding-64 w3-text-blue"></i>
+      </div>
     </div>
+  </div>
+  
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <i class="fa fa-coffee w3-padding-64 w3-text-blue w3-margin-right"></i>
+      </div>
+  
+      <div class="w3-twothird">
+        <h1>Privacy Notice</h1>
+        <h5 class="w3-padding-32">We use cookies on our website. Insofar as those cookies are not strictly
+          necessary for the provision of EyeCU, we will ask you to
+          consent to our use of cookies when you first visit our website..</h5>
+  
+        <p class="w3-text-grey">We are committed to safeguarding the privacy of our website visitors,
+          service users, individual customers and customer personnel.
+          This notice applies where we are acting as a data controller with respect to
+          the personal data of such persons; in other words, where we determine the
+          purposes and means of the processing of that personal data.</p>
+          <p class="w3-text-grey">Our website incorporates privacy controls which affect how we will process
+            your personal data. By using the privacy controls, you can determine the level of 
+            sharing and publication of your personal data.</p>  
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+      <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+  </div>
+  
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-
+  
+  <script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+  
   </body>
+  </html>
+  
 
     {% endblock %}
