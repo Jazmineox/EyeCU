@@ -88,10 +88,6 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    npm install
    ```
-5. excute the CNN model in `classifier.ipynb`
-    ```sh
-   ipython classifier.ipynb
-   ```
 4. Run the frontend model `app.py`
    ```sh
    python3 app.py
