@@ -90,7 +90,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 5. excute the CNN model in `classifier.ipynb`
     ```sh
-   ipython -c "%classifier.ipynb"
+   ipython classifier.ipynb
    ```
 4. Run the frontend model `app.py`
    ```sh
